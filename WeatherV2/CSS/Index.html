@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<hmtl>
+    <head>
+        <charset="utf-8">
+        <!-- the following 2 links are to 2 different themes. Do not use them together.-->
+        <!--<link href="css\style-image.css" rel="stylesheet">  -->
+        <link href="css\style-green.css" rel="stylesheet">
+            <title> WeatherRecords.com</title>
+    </head>
+    <body>
+        
+        <div id="input-form-block">
+            <div id="input-form-head">
+                <h2>Jump in.</h2>
+                <p>Your data is seconds away</p>
+            </div> 
+            <div id="input-form" >
+                <div id="form-instructions">
+                     <p> If you would like to query a single date, just enter it in the start date field. You can leave all the other date fields blank. </p>
+                     <p>If you would like to query a single range of dates, such as July 3, 2010 through July 5, 2010, fill out the start date field and the end date field.</p>
+                     <p> If you would like to view that date range over several years, fill out the start date and end date field for the first year.
+                         Then, add the latest year you would like to query to the End Year Field.
+                         If you wanted to see if it rained around July 4th from 2010 to 2020, enter July 3, 2010 in the Start Date Field, and July 5, 2010 in the End Date Field, like before.
+                         Then, simply add the year 2020 to the End Year Field.
+
+                     </p>
+                </div>
+                <form action ="inputHandler.php" method ="post">
+                    <div id="input-form-text">
+                        <p><label>Start Date:</label> <input type="date" name="startDate"></p>
+                        <p><label>End Date</label>    <input type="date" name = "endDate"></p>
+                        <p><label>End Year</label> <input type="text" minlength="4" maxlength="4" name ="endYear"></p>
+                        <p><label> Zipcode:</label><input type="text" name="zip" maxlength="5" minlength="5"></p><br>
+                        
+                    </div>
+                    <div id="input-form-buttons">
+                        <p><input type="checkbox" name="temperature"  value="true"> Temperature </p>
+                        <p><input type="checkbox" name="precipitation" value="true"> Precipitation </p> 
+                        <p><input type="checkbox" name="wind" value="true"> Wind</p> 
+                    </div>
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+       <!--  <div id="footer">
+            <footer>
+                
+              
+                <p>&copy Netanel Goldstein 2022<br>
+                Background Photo by Manoj Malshan on Unsplash</p>
+                
+            </footer>
+            -->
+        </div>
+    </body>
+</hmtl>

@@ -1,0 +1,17 @@
+{
+    "name": "netan/weather-v2",
+    "require": {
+        "php": ">=7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Netan\\WeatherV2\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Netanel Goldstein",
+            "email": "68030569+NetanelGoldstein@users.noreply.github.com"
+        }
+    ]
+}

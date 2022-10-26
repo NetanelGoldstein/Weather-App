@@ -1,0 +1,151 @@
+html {
+    /* background-color: #98c9a4;  */
+    font-family: sans-serif;
+    background-color: rgb(241,241,241);
+    
+}
+#page-head{
+    background-color:skyblue;
+    text-align:center; 
+    padding:2px;
+    margin-right: 15=px;
+    margin-left: 15px;
+    
+}
+
+#page-head H1, #page-head H2{
+    margin-left: 25px;
+    
+}
+
+div.content-block{
+    margin-left: auto;
+    margin-right: auto;
+    width:425px;
+    
+}
+.content-block-head{
+    background-color:skyblue;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width:425px;
+}
+.results-block{
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+.nav-button{
+    padding: 3px 29px 3px 29px;
+    border-style: solid;
+    border-color: cadetblue;
+    border-bottom: none;
+    border-top: none;
+    color:black;
+    
+}
+
+.nav-button:hover{
+    background-color:cadetblue;
+}
+
+
+
+h1, h2, p{
+    color: rgb(0, 0, 0);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: large;
+}
+#input-form-block{
+      margin-left: auto;
+      margin-right: auto;
+      width: 425px;
+}
+#input-form-head{
+    text-align: center;
+    background-color: skyblue;
+}
+#input-form-text{
+    display: table;  
+    
+}
+#input-form-text p{
+    display: table-row;
+}
+.input-form-text label{
+    display: table-cell;
+    background-color: skyblue;
+    height: 10px;
+    text-indent: 3%;
+    width: 6em;
+}
+#input-form-text input{
+    display: table-cell;
+    width: 8em;
+}
+footer {
+    position:fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+    /* Height of the footer*/ 
+    height: 60px;
+    /* from https://www.geeksforgeeks.org/how-to-create-footer-to-stay-at-the-bottom-of-a-web-page/#:~:text=To%20make%20a%20footer%20fixed,you%20could%20use%20position%3A%20fixed.&text=%3C%20div%20id%20%3D%20%22footer%22,the%20bottom%20of%20the%20page. */
+}
+table, th, td {
+    border: 1px solid black;
+    
+
+}
+#results-table {
+    border-collapse: collapse;
+    background-color: rgb(241, 241, 241);
+    margin-left: 35px;
+    margin-top: 20px;;
+}
+#about-text{
+    
+    width: 425px;
+}
+
+
+/* input forms from inputForm.php */
+.inputForm{
+    display:none;
+}
+#singleDateSelector:checked ~ #singleDateForm{
+    display:block;
+}
+
+#dateRangeSelector:checked ~ #dateRangeForm{
+    display:block;
+}
+
+#multiYearSelector:checked ~ #multiYearForm{
+    display:block;
+}
+/* This next one hides the radio buttons */
+[name=querySelector]{
+    display:none;
+
+}
+
+.querySelectorTabs{
+    background-color: skyblue;
+    padding: 3px 29px 3px 29px;
+}
+.querySelectorTabs:hover{
+    background-color: cadetblue;
+}
+
+.querySelectorTabs:active{
+    background-color: cadetblue;
+}
+
+.input-form-tab-bar{
+    width: fit-content;
+block-size: fit-content;
+}
